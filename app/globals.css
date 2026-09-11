@@ -94,3 +94,6 @@ html,body,.shell,.shell>main{max-width:100%;overflow-x:hidden}
 @media(max-width:420px){
   .sidebar,.sidebar.rail{width:min(88vw,304px)}
 }
+
+/* Copilot was removed from the product. Keep legacy cached markup invisible. */
+.aifab,.copilot{display:none!important}
