@@ -1,3 +1,4 @@
+# Publishes the sanitized prototype after GitHub Pages is enabled.
 name: Deploy prototype to GitHub Pages
 
 on:
