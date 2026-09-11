@@ -1,4 +1,15 @@
-# vinext-starter
+# Mani Solar CRM OS
+
+An interactive, responsive UI prototype for a multi-role solar CRM, ERP, and operations platform. All records included in this public prototype are fictional demo data.
+
+## Live prototype
+
+- GitHub Pages: https://mani-solar-crm.github.io/Mani-Solar-OS/
+- Source: https://github.com/Mani-Solar-CRM/Mani-Solar-OS
+
+Every push to `main` automatically builds and publishes the static prototype through GitHub Actions.
+
+## Local development
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 
