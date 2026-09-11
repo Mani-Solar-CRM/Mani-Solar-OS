@@ -37,3 +37,60 @@ html,body,.shell,.shell>main{max-width:100%;overflow-x:hidden}
   .databox>header input{min-width:0;width:100%}
   .aifab{right:12px;max-width:calc(100vw - 24px)}
 }
+
+/* Compact, app-like navigation drawer on phones and tablets. */
+@media(max-width:820px){
+  .sidebar,.sidebar.rail{
+    width:min(84vw,320px);
+    padding:12px 10px 10px;
+    border-radius:0 22px 22px 0;
+    box-shadow:18px 0 50px #06191c40;
+  }
+  .brand{
+    height:58px;
+    gap:10px;
+    padding:0 8px 11px;
+  }
+  .brand>b{width:36px;height:36px;border-radius:11px}
+  .brand>div{min-width:0}
+  .brand strong{font-size:15px}
+  .brand small{font-size:11px}
+  .brand .mclose{width:34px;height:34px!important;border-radius:10px}
+  .sidebar nav{
+    flex:1;
+    min-height:0;
+    gap:2px;
+    padding:10px 2px 8px;
+    overscroll-behavior:contain;
+    scrollbar-width:thin;
+    scrollbar-color:#ffffff24 transparent;
+  }
+  .sidebar nav>label{
+    font-size:10px;
+    padding:3px 10px 7px;
+  }
+  .sidebar nav button,.sidebar footer>button{
+    height:38px;
+    border-radius:10px;
+    padding:0 10px;
+    gap:10px;
+    font-size:14px;
+  }
+  .sidebar nav svg,.sidebar footer svg{width:18px;height:18px;flex:0 0 18px}
+  .sidebar nav em{min-width:21px;height:20px;padding:0 6px;font-size:10px}
+  .sidebar nav button.active{box-shadow:inset 3px 0 #23dc7b;background:linear-gradient(90deg,#0cce6b22,transparent)}
+  .sidebar footer{padding-top:8px}
+  .sidebar footer>div{
+    min-height:46px;
+    margin-bottom:4px;
+    padding:8px 10px;
+    border-radius:12px;
+  }
+  .sidebar footer strong{font-size:13px}
+  .sidebar footer small{font-size:10px}
+  .shell:has(.sidebar.open) .aifab{opacity:0;pointer-events:none;transform:translateY(8px)}
+}
+
+@media(max-width:420px){
+  .sidebar,.sidebar.rail{width:min(88vw,304px)}
+}
